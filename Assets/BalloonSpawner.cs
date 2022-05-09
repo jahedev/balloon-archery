@@ -6,8 +6,8 @@ public class BalloonSpawner : MonoBehaviour
 {
     [Header("Balloons Spawn Settings")]
     public GameObject balloonObject;
-    [Range(1, 100)] public int minBalloonSpawn = 10;
-    [Range(1, 100)] public int maxBalloonSpawn = 20;
+    [Range(1, 200)] public int minBalloonSpawn = 10;
+    [Range(1, 200)] public int maxBalloonSpawn = 20;
     [Range(-.5f, .001f)] public float minBalloonGravity = -.1f;
     [Range(-.5f, .001f)] public float maxBalloonGravity = -.01f;
     [Range(0f, 20f)] public float minDelayBetweenSpawn = .5f;

@@ -10,6 +10,7 @@ public class Balloon : MonoBehaviour
     public BalloonColors balloonColor;
     [Range(-.5f, 0f)] public float gravityScale;
     public GameObject popEffect;
+    public float lifeTime = 10f;
 
     private Animator animator;
     private Rigidbody2D rb;
@@ -22,6 +23,11 @@ public class Balloon : MonoBehaviour
         rb = FindObjectOfType<Rigidbody2D>();
         rb.gravityScale = gravityScale;
 
+    }
+
+    private void Start()
+    {
+        Destroy(gameObject, lifeTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

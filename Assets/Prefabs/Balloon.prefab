@@ -120,6 +120,7 @@ MonoBehaviour:
   balloonColor: 4
   gravityScale: 0
   popEffect: {fileID: 5789473178338214486, guid: 198439deb3d391547804285d12ec3839, type: 3}
+  lifeTime: 10
 --- !u!58 &960872204412164682
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -133,9 +134,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.21404633}
+  m_Offset: {x: 0, y: 0.41109997}
   serializedVersion: 2
-  m_Radius: 0.17595366
+  m_Radius: 0.3730073
 --- !u!50 &960872204412164683
 Rigidbody2D:
   serializedVersion: 4
