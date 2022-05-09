@@ -9,11 +9,6 @@ public class Bow : MonoBehaviour
 
     AudioSource audioSource;
 
-    private void Awake()
-    {
-        audioSource = FindObjectOfType<AudioSource>();
-    }
-
     void Update()
     {
         if (Input.GetButton("Fire1") && Time.time > nextFire)
@@ -25,7 +20,6 @@ public class Bow : MonoBehaviour
 
     private void Shoot()
     {
-        audioSource.Play();
         Instantiate(arrow, firePoint.position, firePoint.rotation);
     }
 }

@@ -7,13 +7,6 @@ public class Arrow : MonoBehaviour
     public float speed = 20f;
     public Rigidbody2D rb;
 
-    AudioSource popSound;
-
-    private void Awake()
-    {
-        popSound = FindObjectOfType<AudioSource>();
-    }
-
     void Start()
     {
         rb.velocity = transform.right * speed;
