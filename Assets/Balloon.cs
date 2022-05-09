@@ -19,8 +19,6 @@ public class Balloon : MonoBehaviour
         animator = FindObjectOfType<Animator>();
         animator.SetInteger("balloonColorIndex", (int)balloonColor);
 
-        Debug.Log((int)balloonColor);
-
         rb = FindObjectOfType<Rigidbody2D>();
         rb.gravityScale = gravityScale;
 
@@ -30,7 +28,6 @@ public class Balloon : MonoBehaviour
     {
         if (other.CompareTag("Arrow"))
         {
-            Debug.Log("Arrow Hit");
             Vector3 pos = gameObject.transform.position;
             pos.y += .2f;
             Instantiate(popEffect, pos, Quaternion.identity);
